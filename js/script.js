@@ -214,7 +214,12 @@ function coloraCella() {
     attempts++;
     if (bombs.includes(num)) {
       this.style.backgroundColor = "red";
-      this.innerHTML = `<img src="src/img/bomb.png">`;
+      this.innerHTML = `<img src="img/bomba-logo.png" 
+      style ="width: 75%;
+      transform: translate(-50%, -50%);
+      position: relative;
+      left: 50%;
+      top: 50%;">`;
       gameOver();
     } else {
       this.style.backgroundColor = "#6495ed";
@@ -223,5 +228,7 @@ function coloraCella() {
     this.removeEventListener("click", coloraCella);
   }
 //   funzione per terminare la partita
-function gameOver() {}
+function gameOver() {
+    
+}
 document.getElementById("play").addEventListener("click", setLevel);
